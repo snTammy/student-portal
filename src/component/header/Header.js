@@ -14,7 +14,7 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav me-auto mb-2 mb-md-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/settings">Sign up</Link>
+            <Link className="nav-link active" aria-current="page" to="/settings">Settings</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/about-us">About us</Link>
@@ -31,7 +31,7 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav me-auto mb-2 mb-md-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/settings">Sign up</Link>
+            <Link className="nav-link active" aria-current="page" to="/sign-up">Sign up</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/about-us">About us</Link>
@@ -67,15 +67,10 @@ export default function Header() {
   }
  
   const signOutSubmitHandler = () => {
+    console.log('sign out clicked');
     localStorage.clear();
+    history.push('/');
   }
-
-  const sayHello = () => {
-    return(
-      <div><Link className="nav-link" to="/about-us">About us</Link></div>
-    );
-  }
-
 
   return (
     

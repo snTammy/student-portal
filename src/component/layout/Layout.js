@@ -12,7 +12,7 @@ const Layout = () => {
         if(localStorage.getItem('loggedInStudent')){
             return(
                 <div>
-                <Route exact path="/" component={SignUp}/>
+                <Route exact path="/" component={Home}/>
                 <Route path="/home" component={Home}/>    
                 <Route path="/about-us" component={AboutUs}/>
                 </div>
